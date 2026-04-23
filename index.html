@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this might be useless in the future</title>
+</head>
+<body>
+    <div style="display:flex; flex-direction:column; gap:40px; align-items:center">
+        <div style="display:flex; flex-direction:column; gap:10px; align-items:center">
+            <label for="eur">Convert USD to EUR:</label>
+            <div style="display:flex; flex-direction:row; gap:10px" id="eur">
+                <input style="text-align:center" type="text" id="inputFieldEur" placeholder="USD" onsubmit="convertToEur()">
+                <span>-></span>
+                <input style="text-align:center" type="text" id="outputFieldEur" placeholder="EUR" readonly>
+                <button style="color:#000" onclick="copyEurOutput()">Copy</button>
+            </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; align-items:center">
+            <label for="jp">Convert USD to JPY:</label>
+            <div style="display:flex; flex-direction:row; gap:10px" id="jp">
+                <input style="text-align:center" type="text" id="inputFieldJp" placeholder="USD" onsubmit="convertToJp()">
+                <span>-></span>
+                <input style="text-align:center" type="text" id="outputFieldJp" placeholder="JPY" readonly>
+                <button style="color:#000" onclick="copyJpOutput()">Copy</button>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
