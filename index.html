@@ -25,6 +25,24 @@
                 <button style="color:#000" onclick="copyJpOutput()">Copy</button>
             </div>
         </div>
+        <div style="display:flex; flex-direction:column; gap:10px; align-items:center">
+            <label for="cny">Convert USD to CNY:</label>
+            <div style="display:flex; flex-direction:row; gap:10px" id="cny">
+                <input style="text-align:center" type="text" id="inputFieldCny" placeholder="USD" onsubmit="convertToCny()">
+                <span>-></span>
+                <input style="text-align:center" type="text" id="outputFieldCny" placeholder="CNY" readonly>
+                <button style="color:#000" onclick="copyCnyOutput()">Copy</button>
+            </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; align-items:center">
+            <label for="gbp">Convert USD to GBP:</label>
+            <div style="display:flex; flex-direction:row; gap:10px" id="gbp">
+                <input style="text-align:center" type="text" id="inputFieldGbp" placeholder="USD" onsubmit="convertToGbp()">
+                <span>-></span>
+                <input style="text-align:center" type="text" id="outputFieldGbp" placeholder="GBP" readonly>
+                <button style="color:#000" onclick="copyGbpOutput()">Copy</button>
+            </div>
+        </div>
     </div>
         <script src="script.js"></script>
 </body>
